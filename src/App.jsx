@@ -1,26 +1,12 @@
 import Cart from './components/Cart';
 import Footer from './components/Footer';
+import './App.css';
 
 function App() {
   return (
-    <div
-      style={{
-        minHeight: '100vh',
-        display: 'flex',
-        flexDirection: 'column',
-        backgroundColor: '#3a3a3a'
-      }}
-    >
+    <div className="app-container">
       {/* Main content */}
-      <div
-        style={{
-          flex: 1,
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          padding: '40px 20px'
-        }}
-      >
+      <div className="app-content">
         <Cart />
       </div>
 
