@@ -1,24 +1,30 @@
-import { useState } from 'react'
-import CartProduct from './components/cartProduct'   // 👈 import component
+import { useState } from 'react';
+import CartProduct from './components/cartProduct';
 import Cart from './components/Cart';
 import Footer from './components/Footer';
-import './App.css';
 
 function App() {
-   const [cart, setCart] = useState([])
+  const [cart, setCart] = useState([]);
 
-  const handleAddToCart = (item) => {
-    setCart((prev) => [...prev, item])
-    console.log('Cart:', item)
-  }
+  const s = {
+    app: {
+      minHeight: '100vh',
+      display: 'flex',
+      flexDirection: 'column',
+      backgroundColor: '#ffffff', // ✅ ĐỔI NỀN TRẮNG
+      padding: 20,
+      boxSizing: 'border-box',
+    },
+    content: { flex: 1 },
+  };
 
   return (
-    <div className="app-container">
-      {/* Main content */}
-      <div className="app-content">
-        <CartProduct onAddToCart={handleAddToCart} />
-        <Cart />
+    <div style={s.app}>
+      <div style={s.content}>
+        <CartProduct onAddToCart={item => setCart([...cart, item])} />
+        <Cart cart={cart} />
       </div>
+
       <Footer />
     </div>
   );

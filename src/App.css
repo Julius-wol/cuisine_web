@@ -1,25 +1,10 @@
-#root {
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
 .app-container {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #3a3a3a;
 }
 
 .app-content {
   flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 40px 20px;
 }
