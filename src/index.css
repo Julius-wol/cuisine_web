@@ -6,9 +6,15 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #3a3a3a;
+  min-width: 320px;
+  min-height: 100vh;
 }
 
-/* ❌ KHÔNG center toàn app */
 #root {
   width: 100%;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.87);
+
 }
