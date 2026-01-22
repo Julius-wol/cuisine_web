@@ -1,0 +1,55 @@
+.nav {
+  background-color: #fff;
+  padding: 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 30px;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #666;
+  font-weight: 500;
+  font-size: 15px;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #333;
+  transition: width 0.3s ease;
+}
+
+.nav a:hover {
+  color: #333;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .nav ul {
+    gap: 20px;
+    padding: 12px 20px;
+  }
+
+  .nav a {
+    font-size: 14px;
+  }
+}

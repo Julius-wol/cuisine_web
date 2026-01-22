@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
+  background-color: #fafafa;
+  color: #333;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: "Monaco", "Courier New", monospace;
+}
+
+/* Container layout */
+.header,
+.body_1,
+.nav,
+.Footer {
+  max-width: 1480px;
+  padding: 20px 30px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.body,
+.body_2 {
+  max-width: 1480px;
+  padding: 20px 30px;
+  margin: auto;
+  padding-left: 41px;
+  padding-right: 40px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo,
+.header-content {
+  flex: 1;
+}
+
+.logo img {
+  width: 20%;
+}
+
+.header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-content input[type="text"] {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.header-content button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.header-content button:hover {
+  background-color: #555;
+}
+
+/* Navigation */
+.nav {
+  background-color: #f8f9fa;
+  padding: 15px 0;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #e74c3c;
+}

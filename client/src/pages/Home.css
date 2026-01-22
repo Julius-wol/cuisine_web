@@ -1,0 +1,204 @@
+.home {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+  min-height: calc(100vh - 200px);
+}
+
+.home-container {
+  display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 40px;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.home-images {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 700px;
+  margin-right: 40px;
+}
+
+.images-grid {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 50px;
+  padding: 30px;
+}
+
+.restaurant-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 24px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  border: 6px solid white;
+}
+
+.restaurant-image:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.restaurant-image:nth-child(2) {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.restaurant-image:nth-child(3) {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.restaurant-image:nth-child(4) {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.restaurant-image:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+}
+
+.registration-section {
+  flex: 0 1 420px;
+  background: linear-gradient(135deg, #ffd9b3 0%, #ffccb3 100%);
+  padding: 40px 35px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.registration-section h2 {
+  font-size: 24px;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 14px;
+  color: #333;
+  font-weight: 600;
+}
+
+.form-group input {
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 13px;
+  font-family: inherit;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.form-group input::placeholder {
+  color: #999;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #ff9933;
+  box-shadow: 0 0 0 3px rgba(255, 153, 51, 0.1);
+}
+
+.send-button {
+  padding: 12px;
+  background: linear-gradient(135deg, #ff9933 0%, #ff8811 100%);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  margin-top: 8px;
+}
+
+.send-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(255, 153, 51, 0.3);
+}
+
+@media (max-width: 1024px) {
+  .home-container {
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 15px;
+  }
+
+  .home-images {
+    height: 400px;
+  }
+
+  .restaurant-image {
+    width: 280px;
+    height: 220px;
+  }
+
+  .registration-section {
+    flex: 1;
+    max-width: 450px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    min-height: auto;
+  }
+
+  .home-container {
+    flex-direction: column;
+    gap: 25px;
+    padding: 20px 15px;
+  }
+
+  .home-images {
+    height: 320px;
+  }
+
+  .restaurant-image {
+    width: 220px;
+    height: 180px;
+  }
+
+  .registration-section {
+    padding: 30px 20px;
+  }
+
+  .registration-section h2 {
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+
+  .registration-form {
+    gap: 15px;
+  }
+}
