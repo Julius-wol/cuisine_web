@@ -41,12 +41,12 @@ export default function CartProduct({ onAddToCart }) {
       borderRadius: 14,
     },
     info: { display: 'flex', flexDirection: 'column', gap: 10 },
-    name: { fontSize: 18, fontWeight: 'bold' },
+    name: { fontSize: 18,color: 'black' },
     price: { fontSize: 16 },
     btnWrap: { position: 'absolute', right: 20, bottom: 20 },
     btn: {
       backgroundColor: 'rgb(252,119,3)',
-      color: '#fff',
+      color: 'white',
       border: 'none',
       borderRadius: 20,
       padding: '7px 22px',
@@ -72,11 +72,10 @@ export default function CartProduct({ onAddToCart }) {
               <div style={s.btnWrap}>
                 <button
                   style={s.btn}
-                  onMouseOver={e => (e.target.style.backgroundColor = 'black')}
                   onMouseOut={e => (e.target.style.backgroundColor = 'rgb(252,119,3)')}
                   onClick={() => onAddToCart?.(item)}
                 >
-                  Add
+                  Add To Cart
                 </button>
               </div>
             </div>

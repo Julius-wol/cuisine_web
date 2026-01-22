@@ -1,7 +1,7 @@
 export default function Footer() {
   const s = {
     footer: {
-      backgroundColor: '#FFD9E0',
+      backgroundColor: 'rgb(252,119,3)',
       padding: '60px 20px',
       textAlign: 'center',
       marginTop: 60,
@@ -9,13 +9,13 @@ export default function Footer() {
     text: {
       fontSize: 16,
       margin: '10px 0',
-      color: '#333',
+      color: 'white',
     },
     bold: {
       fontSize: 16,
       margin: '10px 0',
       fontWeight: 'bold',
-      color: '#333',
+      color: 'white',
     },
   };
 
