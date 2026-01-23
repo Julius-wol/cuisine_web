@@ -1,11 +1,11 @@
 export default function Cart({ cart = [] }) {
   const s = {
     box: {
-      background: '#FFD9E0',
-      border : '1px solid black',
+      background: 'rgb(252,119,3)',
+      border : '1px solid white',
       padding: 30,
       marginTop: 40,
-      borderRadius: 10,
+      
     },
     title: { fontSize: 22, fontWeight: 'bold', marginBottom: 10 },
     item: { margin: '6px 0' },
