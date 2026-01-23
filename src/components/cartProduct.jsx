@@ -41,8 +41,8 @@ export default function CartProduct({ onAddToCart }) {
       borderRadius: 14,
     },
     info: { display: 'flex', flexDirection: 'column', gap: 10 },
-    name: { fontSize: 18,color: 'black' },
-    price: { fontSize: 16 },
+    name: { fontSize: 18, color: 'black' },
+    price: { fontSize: 16, color: 'black' },
     btnWrap: { position: 'absolute', right: 20, bottom: 20 },
     btn: {
       backgroundColor: 'rgb(252,119,3)',
