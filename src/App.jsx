@@ -1,8 +1,9 @@
 import { useState } from 'react';
-import CartProduct from './components/cartProduct';
+import CartProduct from './components/CartProduct';
 import Cart from './components/Cart';
 import Footer from './components/Footer';
-import Header from './components/header';
+import Header from './components/Header';
+import Home from './components/Home';
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -22,6 +23,7 @@ function App() {
   return (
     <div style={s.app}>
       <Header />
+      <Home />
       <div style={s.content}>
         <CartProduct onAddToCart={item => setCart([...cart, item])} />
         <Cart cart={cart} />
